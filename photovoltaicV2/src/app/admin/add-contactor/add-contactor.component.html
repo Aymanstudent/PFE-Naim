@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <h1>Créer un nouvelle entrepreneur</h1>
+  <div class="contactor">
+    <div class="form">
+      <h3>Les inforamtions d'entrepreneur</h3>
+      <div>
+        <label class="form-label">Nom : </label>
+        <input class="form-control" type="text" [(ngModel)]="contactor.person.firstName">
+      </div>
+      <div>
+        <label class="form-label">Prénom : </label>
+        <input class="form-control" type="text" [(ngModel)]="contactor.person.lastName">
+      </div>
+      <div>
+        <label class="form-label">age : </label>
+        <input class="form-control" type="number" [(ngModel)]="contactor.person.age">
+      </div>
+      <div>
+        <label class="form-label">Email : </label>
+        <input class="form-control" type="email" [(ngModel)]="contactor.email" placeholder="@exemple.com">
+      </div>
+      <div>
+        <label class="form-label">Adresse : </label>
+        <input class="form-control" type="text" [(ngModel)]="contactor.person.address">
+      </div>
+    </div>
+    <div class="register-form">
+      <h3>Les inforamtions du compte</h3>
+      <div>
+        <label class="form-label">Nom : </label>
+        <input class="form-control" type="text" [(ngModel)]="user.nom">
+      </div>
+      <div>
+        <label class="form-label">Prénom : </label>
+        <input class="form-control" type="text" [(ngModel)]="user.prenom">
+      </div>
+      <div>
+        <label class="form-label">Email : </label>
+        <input class="form-control" type="email" [(ngModel)]="user.email" placeholder="@exemple.com">
+      </div>
+      <div>
+        <label class="form-label">Password : </label>
+        <input class="form-control" type="password" [(ngModel)]="user.password">
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-primary" (click)="createNewContactor()">enregistrer</button>
+  </div>
+</div>

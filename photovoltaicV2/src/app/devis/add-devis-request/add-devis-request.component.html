@@ -1,0 +1,66 @@
+<div  class="container-fluid">
+  <h1>Ajouter demande devis</h1>
+  <div>
+    <div class="devisRequest">
+      <h2>Les information du client : </h2>
+      <div class="form">
+        <div>
+          <label class="form-label">Nom du client :</label>
+          <input class="form-control" type="text" [(ngModel)]="devisRequest.potential_customer.firstName">
+        </div>
+        <div>
+          <label class="form-label">Prenom du client :</label>
+          <input class="form-control" type="text" [(ngModel)]="devisRequest.potential_customer.lastName">
+        </div>
+        <div>
+          <label class="form-label">Email du client :</label>
+          <input class="form-control" type="email" [(ngModel)]="devisRequest.potential_customer.email" placeholder="@exemple.com">
+        </div>
+        <div>
+          <label class="form-label">Telephone du client :</label>
+          <input class="form-control" type="text" [(ngModel)]="devisRequest.potential_customer.phone" placeholder="+216">
+        </div>
+      </div>
+      <h2>Les information de demande : </h2>
+      <div class="form">
+        <div>
+          <label class="form-label">adresse du batiment : </label>
+          <input class="form-control" type="text" [(ngModel)]="devisRequest.location">
+        </div>
+        <div>
+          <label class="form-label">Accée electrique :</label>
+          <select class="form-select" (change)="selectYesORNO($event)">
+            <option>choisir oui ou non</option>
+            <option [value]=true>oui</option>
+            <option [value]=false >non</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">Consommation par mois :</label>
+          <input class="form-control" type="text" [(ngModel)]="devisRequest.consumption">
+        </div>
+        <div>
+          <label class="form-label">Type de toiture :</label>
+          <select class="form-select" (change)="selectRoofType($event)">
+            <option>choisir un type de toiture</option>
+            <option *ngFor="let r of roofs" [value] = r>{{ r }}</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">Type de battiment :</label>
+          <select class="form-select" (change)="selectBuildingType($event)">
+            <option>choisir un type de battiment</option>
+            <option *ngFor="let b of buildings" [value] = b>{{ b }}</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">SurfaceDisponible :</label>
+          <input class="form-control" type="text" [(ngModel)]="devisRequest.available_area">
+        </div>
+        <div class="mt-3">
+          <button class="btn btn-primary" (click)="addDevisRequest()">enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

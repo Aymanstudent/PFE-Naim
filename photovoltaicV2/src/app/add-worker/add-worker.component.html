@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <h1>Ajouter ouvrier</h1>
+  <div class="alert alert-success" *ngIf="errorMessage != ''">
+    {{ errorMessage }}
+  </div>
+  <div class="d-flex gap-5">
+    <div class="d-flex align-items-center flex-column">
+      <div class="image">
+        <img [src]=imageLink id="user">
+      </div>
+      <label for="file-upload" class="custom-file-upload">importer</label>
+      <input id="file-upload" type="file" class="form-control" (change)="handleFileInput($event)">
+    </div>
+    <div class="mt-5">
+      <div class="row mt-5">
+        <h2>Les information personnel : </h2>
+        <div class="col">
+          <label class="form-label">Nom :</label>
+          <input class="form-control" type="text" [(ngModel)]="worker.generaleInfo.firstName">
+        </div>
+        <div class="col">
+          <label class="form-label">Prenom :</label>
+          <input class="form-control" type="text" [(ngModel)]="worker.generaleInfo.lastName">
+        </div>
+        <div class="col">
+          <label class="form-label">Age :</label>
+          <input class="form-control" type="text" [(ngModel)]="worker.generaleInfo.age">
+        </div>
+        <div class="col">
+          <label class="form-label">Address :</label>
+          <input class="form-control" type="text" [(ngModel)]="worker.generaleInfo.address">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <h2>Les information du compte : </h2>
+        <div class="col-3">
+          <label class="form-label">Email :</label>
+          <input class="form-control" type="email" [(ngModel)]="worker.email">
+        </div>
+        <div class="col-3">
+          <label class="form-label">Password :</label>
+          <input class="form-control" type="password" [(ngModel)]="worker.password">
+        </div>
+        <div class="col-3">
+          <label class="form-label">Role :</label>
+          <select class="form-select" [(ngModel)]="worker.profession">
+            <option *ngFor="let role of roles" [value]=role>{{ role }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-primary" (click)="addWorker()">enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <h1>liste des demandes d'application</h1>
+  <ul class="requestList">
+    <li class="request" *ngFor="let request of contactorRequests" >
+      <i class="bi bi-envelope me-3 " style="color: green" data-bs-toggle="modal" data-bs-target="#requestModal" (click)="selectRequest(request)"></i>
+      <i class="bi bi-trash ms-1 me-3" style="color: red" data-bs-toggle="modal" data-bs-target="#deleteModal" (click)="selectRequest(request)"></i>
+      | {{request.firstName}} {{request.lastName}} <span>| message : {{request.message}}</span>
+    </li>
+  </ul>
+</div>
+
+<img src="assets/mail-icon-2048x2048-525ey8hu.png" id="vide-image" *ngIf="contactorRequests.length === 0">
+
+
+<div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+          <span>Nom : {{contactorRequest.firstName}}</span>
+          <span>Prenom : {{contactorRequest.lastName}}</span>
+          <span>Entreprise : {{contactorRequest.companyName}}</span>
+          <span>Adresse entreprise : {{contactorRequest.companyAddress}}</span>
+          <span>Telephone : {{contactorRequest.phone}}</span>
+          <span>Email : {{contactorRequest.email}}</span>
+          <span>Message : {{contactorRequest.message}}</span>
+      </div>
+      <div class="d-flex justify-content-end p-3">
+        <button class="btn btn-primary me-3" (click)="navigateToCreateContactor()" data-bs-dismiss="modal">créer</button>
+        <button class="btn btn-light" data-bs-dismiss="modal">fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <span>Êtes-vous sûr de supprimer cette demande ?</span>
+      </div>
+      <div class="d-flex justify-content-end p-3">
+        <button class="btn btn-primary me-3" (click)="deleteContractRequest()" data-bs-dismiss="modal">oui</button>
+        <button class="btn btn-light" data-bs-dismiss="modal">annuler</button>
+      </div>
+    </div>
+  </div>
+</div>

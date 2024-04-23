@@ -1,0 +1,77 @@
+.container-fluid{
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h1{
+  font-size: 2.2rem;
+  color: #2222ea;
+  font-weight: 700;
+  text-align: center;
+}
+
+i{
+  opacity: 75%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+i:hover{
+  opacity: 100%;
+}
+
+.bi-plus-square-fill{
+  font-size: 1.8rem;
+  color: #2222ea;
+}
+
+.workers{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  gap: 25px;
+}
+
+.worker{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 3px #3b7ddd;
+  height: 350px;
+  width: 300px;
+}
+
+.worker span{
+  font-size: 18px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+#img-profile{
+  width: 300px;
+}
+
+.bi-pencil-square{
+  color: green;
+}
+
+.bi-trash{
+  color: red;
+}
+
+.form-control{
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 18px;
+  background-image: linear-gradient(#ffffff, #f8f8f8);
+}
+
+.btn{
+  border-radius: 3px;
+}
+
+.btn-primary{
+  background-color: #2222ea;
+  font-weight: 700;
+}

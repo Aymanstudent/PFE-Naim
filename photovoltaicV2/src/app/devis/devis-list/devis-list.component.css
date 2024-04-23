@@ -1,0 +1,129 @@
+.container-fluid {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.container-fluid h1 {
+  color: #2222ea;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.container-fluid .table th {
+  font-size: 24px !important;
+  font-weight: 600;
+  border-bottom: 1px solid gray;
+  padding: 18px !important;
+}
+
+.container-fluid .table td {
+  font-size: 22px !important;
+  font-weight: 500;
+  border-bottom: 1px solid #f8f8f8;
+  padding: 18px !important;
+}
+
+.container-fluid .table {
+  background-image: linear-gradient(to top, #f6f6f6, #ffffff);
+  margin: 0 !important;
+}
+
+mat-paginator {
+  background-color: #2222ea !important;
+  font-weight: 600 !important;
+}
+
+i {
+  font-size: 22px !important;
+  cursor: pointer;
+  opacity: 75%;
+}
+
+i:hover {
+  opacity: 100%;
+}
+
+.bi-eye-fill {
+  color: #2222ea;
+}
+
+.bi-pencil-square {
+  color: green;
+}
+
+.bi-trash {
+  color: red;
+}
+
+.bi-plus-square-fill {
+  font-size: 28px !important;
+  color: #2222ea;
+}
+
+.modal-body div {
+  margin-top: 25px;
+}
+
+.form-control {
+  border-radius: 3px;
+  box-shadow: none;
+  background-image: linear-gradient(#ffffff, #f8f8f8);
+}
+
+.btn {
+  border-radius: 3px;
+}
+
+.btn-primary {
+  background-color: #2222ea;
+  font-weight: 700;
+}
+
+.modal-content {
+  border-radius: 3px !important;
+}
+
+.active {
+  background-color: green;
+  color: white;
+  padding: 8px 12px;
+  margin-left: 12px;
+}
+
+#vide-image {
+  width: 600px;
+  position: absolute;
+  top: 220px;
+  left: 660px;
+  opacity: 10%;
+}
+
+.bi-send {
+  color: #3b7ddd;
+}
+
+.btn-print {
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+  border: none !important;
+  background-color: transparent;
+  margin-right: 12px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  width: 100%;
+  color: #2222ea;
+  text-align: center;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+
+#request .table {
+  text-align: center !important;
+}
+

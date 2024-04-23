@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <h1>liste des demandes devis</h1>
+  <ul class="requestList">
+    <li class="request" *ngFor="let request of devisRequestList" >
+      <i class="bi bi-send me-3" (click)="navigateToCreateNewDevis(request)"></i><span>| demande devis</span> | nom client : {{request.potential_customer.firstName}} <span class="ms-5">prenom client :  {{request.potential_customer.lastName}}</span>
+    </li>
+  </ul>
+</div>
+
+<img src="assets/mail-icon-2048x2048-525ey8hu.png" id="vide-image" *ngIf="devisRequestList.length === 0">

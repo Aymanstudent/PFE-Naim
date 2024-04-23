@@ -1,0 +1,74 @@
+.container-fluid{
+  padding-top: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+h1{
+  font-size: 2.2rem;
+  color: #2222ea;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form-label{
+  font-size: 22px;
+}
+
+.form-control{
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 22px;
+  background-image: linear-gradient(#ffffff, #f8f8f8);
+}
+
+.form-select{
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 22px;
+  background-image: linear-gradient(#ffffff, #f8f8f8);
+}
+
+h2{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.image{
+  width: 400px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#user{
+  width: 300px;
+}
+
+.btn{
+  border-radius: 3px;
+}
+
+.btn-primary{
+  margin-top: 32px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border-radius: 3px;
+  background-color: rgba(34, 34, 234, 0.74);
+  color: white;
+  font-weight: 700;
+  display: inline-block;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.custom-file-upload:hover{
+  background-color: #2222ea;
+}

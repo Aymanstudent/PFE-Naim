@@ -1,0 +1,179 @@
+<div class="container-fluid">
+  <h1>Stock des panneaux solaire</h1>
+  <div class="row">
+    <div class="col-3 p-3">
+      <div class="flex justify-content-start">
+        <span style="font-size: 1.5rem; color: #3b7ddd; font-weight: 700">Ajouter un PanneauSolaire</span>
+        <i class="bi bi-plus-square-fill ms-3" style="color: #3b7ddd" data-bs-toggle="modal" data-bs-target="#addSolarPanelModal" (click)="clearSolarPanel()"></i>
+      </div>
+      <div class="progress">
+        <circle-progress
+          [percent]="calculateStock()"
+          [radius]="100"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [outerStrokeColor]="'#3b7ddd'"
+          [innerStrokeColor]="'#0e2238'"
+          [animation]="true"
+          [animationDuration]="300"
+        ></circle-progress>
+        <span>Niveau de stock</span>
+      </div>
+    </div>
+    <div class="col items">
+      <div class="item" *ngFor="let item of solarPanelList">
+        <div class="image"><img [src]="getImageUrl(item.image)"></div>
+        <div class="description">
+          <div class="d-flex justify-content-end mb-3">
+            <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ModifierPanneauModal" (click)="selectSolarPanel(item)">Modifier</button>
+            <button class="btn btn-danger ms-2" (click)="deleteSolarPanelById(item.id)">Supprimer</button>
+          </div>
+          <span id="title">
+          {{item.model}} <br> <span style="color: red; margin: 12px;">Prix : {{item.price}} TND</span>
+          </span>
+          <p id="description">
+            Puissance nominal: {{item.nominal_power}} W<br>
+            Tension maximal: {{item.maximum_voltage}} V<br>
+            Courant maximal: {{item.maximum_current}} A<br>
+            Des mesures <br>
+            Longueur: {{item.height}} mm<br>
+            Largeur: {{item.width}} mm<br>
+            Poids: {{item.weight}} kg<br>
+            Type cellule solaire : {{item.type_cell}}<br>
+          </p>
+          <div class="d-flex align-items-center justify-content-end m-2 w-100">
+            <div class="quantity me-2">x{{item.quantity}} pièces</div>
+            <div class="d-flex align-items-center">
+              <input type="number" class="form-control nb-piece text-center" (keyup)="onKey($event)">
+              <i class="bi bi-plus-square-fill" style="font-size: 2.5rem; color: #3b7ddd" (click)="addQuantity(item)"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="addSolarPanelModal" tabindex="-1" aria-labelledby="addSolarPanelLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <label class="form-label">modele :</label>
+            <input class="form-control" type="text" [(ngModel)]="solarPanel.model">
+          </div>
+          <div class="col">
+            <label class="form-label">puissance nominal :</label>
+            <input class="form-control" type="number" [(ngModel)]="solarPanel.nominal_power">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <label class="form-label">tension maximal :</label>
+            <input class="form-control" type="number" [(ngModel)]="solarPanel.maximum_voltage">
+          </div>
+          <div class="col">
+            <label class="form-label">courant maximal :</label>
+            <input class="form-control" type="number" [(ngModel)]="solarPanel.maximum_current">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <label class="form-label">height :</label>
+            <input class="form-control" type="number" [(ngModel)]="solarPanel.height">
+          </div>
+          <div class="col">
+            <label class="form-label">width :</label>
+            <input class="form-control" type="number" [(ngModel)]="solarPanel.width">
+          </div>
+          <div class="col">
+            <label class="form-label">poids :</label>
+            <input class="form-control" type="number" [(ngModel)]="solarPanel.weight">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <label class="form-label">type cellule solaire :</label>
+            <input class="form-control" type="text" [(ngModel)]="solarPanel.type_cell">
+          </div>
+          <div class="col">
+            <label class="form-label">prix :</label>
+            <input class="form-control" type="number" [(ngModel)]="solarPanel.price">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <input class="form-control" type="file" (change)="onFileChange($event)">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="addSolarPanel()">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="ModifierPanneauModal" tabindex="-1" aria-labelledby="ModifierPanneauLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <label for="modele_modif">modele :</label>
+            <input id="modele_modif" class="form-control" type="text" [(ngModel)]="solarPanel.model">
+          </div>
+          <div class="col">
+            <label for="puissance_nominal_modif">puissance nominal :</label>
+            <input id="puissance_nominal_modif" class="form-control" type="number" [(ngModel)]="solarPanel.nominal_power">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <label for="tension_maximal_modif">tension maximal :</label>
+            <input id="tension_maximal_modif" class="form-control" type="number" [(ngModel)]="solarPanel.maximum_voltage">
+          </div>
+          <div class="col">
+            <label for="courant_maximal_modif">courant maximal :</label>
+            <input id="courant_maximal_modif" class="form-control" type="number" [(ngModel)]="solarPanel.maximum_current">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <label for="height_modif">height :</label>
+            <input id="height_modif" class="form-control" type="number" [(ngModel)]="solarPanel.height">
+          </div>
+          <div class="col">
+            <label for="width_modif">width :</label>
+            <input id="width_modif" class="form-control" type="number" [(ngModel)]="solarPanel.width">
+          </div>
+          <div class="col">
+            <label for="poids_modif">poids :</label>
+            <input id="poids_modif" class="form-control" type="number" [(ngModel)]="solarPanel.weight">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <label for="type_cellule_colaire_modif">type cellule solaire :</label>
+            <input id="type_cellule_colaire_modif" class="form-control" type="text" [(ngModel)]="solarPanel.type_cell">
+          </div>
+          <div class="col">
+            <label for="prix_modif">prix :</label>
+            <input id="prix_modif" class="form-control" type="number" [(ngModel)]="solarPanel.price">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <input class="form-control" type="file" (change)="onFileChange($event)">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="updateSolarPanel()">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>

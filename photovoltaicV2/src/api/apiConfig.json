@@ -1,0 +1,3899 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Generated server url"
+    }
+  ],
+  "paths": {
+    "/worker/update": {
+      "put": {
+        "tags": [
+          "worker-controller"
+        ],
+        "operationId": "updateWorker",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Worker"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/systemFixing/update": {
+      "put": {
+        "tags": [
+          "system-fixing-controller"
+        ],
+        "operationId": "updateSystemFixing",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SystemFixing"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/supplier/update": {
+      "put": {
+        "tags": [
+          "supplier-controller"
+        ],
+        "operationId": "updateSuplier",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Supplier"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/solarPanel/update": {
+      "put": {
+        "tags": [
+          "solar-panel-controller"
+        ],
+        "operationId": "updateSolarPanel",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolarPanel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/meter/update": {
+      "put": {
+        "tags": [
+          "meter-controller"
+        ],
+        "operationId": "updateMeter",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Meter"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/inverter/update": {
+      "put": {
+        "tags": [
+          "inverter-controller"
+        ],
+        "operationId": "updateInverter",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Inverter"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devisRequest/update": {
+      "put": {
+        "tags": [
+          "devis-request-controller"
+        ],
+        "operationId": "updateDevisRequest",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevisRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devis/update": {
+      "put": {
+        "tags": [
+          "devis-controller"
+        ],
+        "operationId": "updateDevis",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Devis"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/update": {
+      "put": {
+        "tags": [
+          "customer-controller"
+        ],
+        "operationId": "updateCustomer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Customer"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contactor/update": {
+      "put": {
+        "tags": [
+          "contactor-controller"
+        ],
+        "operationId": "updateContactor",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contactor"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/constructor/update": {
+      "put": {
+        "tags": [
+          "construction-controller"
+        ],
+        "operationId": "updateConstruction",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Construction"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cable/update": {
+      "put": {
+        "tags": [
+          "cable-controller"
+        ],
+        "operationId": "updateCable",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cable"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/battery/update": {
+      "put": {
+        "tags": [
+          "battery-controller"
+        ],
+        "operationId": "updateBattery",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Battery"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/activity/update": {
+      "put": {
+        "tags": [
+          "activity-controller"
+        ],
+        "operationId": "modifier_EvenementChantier",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Activity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/worker/add": {
+      "post": {
+        "tags": [
+          "worker-controller"
+        ],
+        "operationId": "addWorker",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Worker"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/systemFixing/add": {
+      "post": {
+        "tags": [
+          "system-fixing-controller"
+        ],
+        "operationId": "ajouter_systemeFixation",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SystemFixing"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/supplier/add": {
+      "post": {
+        "tags": [
+          "supplier-controller"
+        ],
+        "operationId": "addSupplier",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Supplier"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/solarPanel/add": {
+      "post": {
+        "tags": [
+          "solar-panel-controller"
+        ],
+        "operationId": "addSolarPanel",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SolarPanel"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/meter/delete/{id}": {
+      "post": {
+        "tags": [
+          "meter-controller"
+        ],
+        "operationId": "deleteMeterById",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "integer",
+                "format": "int64"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/meter/add": {
+      "post": {
+        "tags": [
+          "meter-controller"
+        ],
+        "operationId": "addMeter",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Meter"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/mail/send": {
+      "post": {
+        "tags": [
+          "email-sender-controller"
+        ],
+        "operationId": "send",
+        "parameters": [
+          {
+            "name": "attachment",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "format": "binary"
+              }
+            }
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "body",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/inverter/add": {
+      "post": {
+        "tags": [
+          "inverter-controller"
+        ],
+        "operationId": "addInverter",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Inverter"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devisRequest/add": {
+      "post": {
+        "tags": [
+          "devis-request-controller"
+        ],
+        "operationId": "addDevisRequest",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevisRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devis/add": {
+      "post": {
+        "tags": [
+          "devis-controller"
+        ],
+        "operationId": "addDevis",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Devis"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/add": {
+      "post": {
+        "tags": [
+          "customer-controller"
+        ],
+        "operationId": "addCustomer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Customer"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Customer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contactorRequest/add": {
+      "post": {
+        "tags": [
+          "contactor-request-controller"
+        ],
+        "operationId": "addContactorRequest",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ContactorRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContactorRequest"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contactor/add": {
+      "post": {
+        "tags": [
+          "contactor-controller"
+        ],
+        "operationId": "addContactor",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Contactor"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/constructor/add": {
+      "post": {
+        "tags": [
+          "construction-controller"
+        ],
+        "operationId": "saveConstruction",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Construction"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Construction"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/company/add": {
+      "post": {
+        "tags": [
+          "company-controller"
+        ],
+        "operationId": "addCompany",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Company"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Company"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cable/add": {
+      "post": {
+        "tags": [
+          "cable-controller"
+        ],
+        "operationId": "addCable",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cable"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bill/add": {
+      "post": {
+        "tags": [
+          "bill-controller"
+        ],
+        "operationId": "addBill",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Bill"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/battery/add": {
+      "post": {
+        "tags": [
+          "battery-controller"
+        ],
+        "operationId": "addBattery",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Battery"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/register": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "operationId": "register",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/authenticate": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "operationId": "authenticate",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthenticationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/AuthenticationResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/amendment/add": {
+      "post": {
+        "tags": [
+          "amendment-controller"
+        ],
+        "operationId": "addAmendment",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Amendment"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/activity/add": {
+      "post": {
+        "tags": [
+          "activity-controller"
+        ],
+        "operationId": "ajouter_jourTravailler",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Activity"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/worker/get": {
+      "get": {
+        "tags": [
+          "worker-controller"
+        ],
+        "operationId": "getWorkers",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Worker"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/worker/get/one": {
+      "get": {
+        "tags": [
+          "worker-controller"
+        ],
+        "operationId": "getWorkerByEmail",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Worker"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/worker/get/company/{id}": {
+      "get": {
+        "tags": [
+          "worker-controller"
+        ],
+        "operationId": "getWorkersByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Worker"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/vehicle/get": {
+      "get": {
+        "tags": [
+          "vehicle-controller"
+        ],
+        "operationId": "getVehicles",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vehicule"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/systemFixing/get": {
+      "get": {
+        "tags": [
+          "system-fixing-controller"
+        ],
+        "operationId": "getSystemFixings",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SystemFixing"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/systemFixing/get/company/{id}": {
+      "get": {
+        "tags": [
+          "system-fixing-controller"
+        ],
+        "operationId": "getSystemFixingsByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SystemFixing"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/supplier/get": {
+      "get": {
+        "tags": [
+          "supplier-controller"
+        ],
+        "operationId": "getSuppliers",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Supplier"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/supplier/get/company/{id}": {
+      "get": {
+        "tags": [
+          "supplier-controller"
+        ],
+        "operationId": "getSuppliersCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Supplier"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/spot/get": {
+      "get": {
+        "tags": [
+          "spot-controller"
+        ],
+        "operationId": "getSpots",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Spot"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/solarPanel/get": {
+      "get": {
+        "tags": [
+          "solar-panel-controller"
+        ],
+        "operationId": "getSolarPanels",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolarPanel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/solarPanel/get/count": {
+      "get": {
+        "tags": [
+          "solar-panel-controller"
+        ],
+        "operationId": "countSolarPanelByModel",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/solarPanel/get/company/{id}": {
+      "get": {
+        "tags": [
+          "solar-panel-controller"
+        ],
+        "operationId": "getSolarPanelsBYCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SolarPanel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/meter/get": {
+      "get": {
+        "tags": [
+          "meter-controller"
+        ],
+        "operationId": "getMeters",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Meter"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/meter/get/company/{id}": {
+      "get": {
+        "tags": [
+          "meter-controller"
+        ],
+        "operationId": "getMetersByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Meter"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/inverter/get": {
+      "get": {
+        "tags": [
+          "inverter-controller"
+        ],
+        "operationId": "getInverters",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Inverter"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/inverter/get/company/{id}": {
+      "get": {
+        "tags": [
+          "inverter-controller"
+        ],
+        "operationId": "getInvertersByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Inverter"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devisRequest/get": {
+      "get": {
+        "tags": [
+          "devis-request-controller"
+        ],
+        "operationId": "getDevisRequests",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DevisRequest"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devisRequest/get/{id}": {
+      "get": {
+        "tags": [
+          "devis-request-controller"
+        ],
+        "operationId": "getDevisRequestById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/DevisRequest"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devisRequest/get/company/{id}": {
+      "get": {
+        "tags": [
+          "devis-request-controller"
+        ],
+        "operationId": "getDevisRequestsByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DevisRequest"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devis/get": {
+      "get": {
+        "tags": [
+          "devis-controller"
+        ],
+        "operationId": "getDevis",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Devis"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devis/get/{id}": {
+      "get": {
+        "tags": [
+          "devis-controller"
+        ],
+        "operationId": "getDevisById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Devis"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devis/get/company/{id}": {
+      "get": {
+        "tags": [
+          "devis-controller"
+        ],
+        "operationId": "getDevisByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Devis"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/get": {
+      "get": {
+        "tags": [
+          "customer-controller"
+        ],
+        "operationId": "getCustomers",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Customer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/get/{id}": {
+      "get": {
+        "tags": [
+          "customer-controller"
+        ],
+        "operationId": "getCustomerById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Customer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/get/company/{id}": {
+      "get": {
+        "tags": [
+          "customer-controller"
+        ],
+        "operationId": "getCustomersByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Customer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contactorRequest/get": {
+      "get": {
+        "tags": [
+          "contactor-request-controller"
+        ],
+        "operationId": "getContactorRequests",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContactorRequest"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contactor/get": {
+      "get": {
+        "tags": [
+          "contactor-controller"
+        ],
+        "operationId": "getAllContactors",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Contactor"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contactor/get/one/by-email": {
+      "get": {
+        "tags": [
+          "contactor-controller"
+        ],
+        "operationId": "getContactorByEmail",
+        "parameters": [
+          {
+            "name": "email",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contactor"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/constructor/get": {
+      "get": {
+        "tags": [
+          "construction-controller"
+        ],
+        "operationId": "getConstructions",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Construction"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/constructor/get/company/{id}": {
+      "get": {
+        "tags": [
+          "construction-controller"
+        ],
+        "operationId": "getConstructionByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Construction"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/company/get": {
+      "get": {
+        "tags": [
+          "company-controller"
+        ],
+        "operationId": "getAllCompanies",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Company"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/company/get/{id}": {
+      "get": {
+        "tags": [
+          "company-controller"
+        ],
+        "operationId": "getCompanyById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Company"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cable/get": {
+      "get": {
+        "tags": [
+          "cable-controller"
+        ],
+        "operationId": "getCables",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cable"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cable/get/company/{id}": {
+      "get": {
+        "tags": [
+          "cable-controller"
+        ],
+        "operationId": "getCablesByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cable"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bill/get": {
+      "get": {
+        "tags": [
+          "bill-controller"
+        ],
+        "operationId": "getBills",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Bill"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/bill/get/construction/{id}": {
+      "get": {
+        "tags": [
+          "bill-controller"
+        ],
+        "operationId": "getBillByConstructionId",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bill"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/battery/get": {
+      "get": {
+        "tags": [
+          "battery-controller"
+        ],
+        "operationId": "getBatteries",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Battery"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/battery/get/company/{id}": {
+      "get": {
+        "tags": [
+          "battery-controller"
+        ],
+        "operationId": "getBatteriesByCompanyId",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Battery"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/activate-account": {
+      "get": {
+        "tags": [
+          "Authentication"
+        ],
+        "operationId": "confirm",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/amendment/get/construction/{id}": {
+      "get": {
+        "tags": [
+          "amendment-controller"
+        ],
+        "operationId": "getAmendmentsByConstructionId",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Amendment"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/activity/get": {
+      "get": {
+        "tags": [
+          "activity-controller"
+        ],
+        "operationId": "getActivities",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Activity"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/activity/get/{id}": {
+      "get": {
+        "tags": [
+          "activity-controller"
+        ],
+        "operationId": "getActivitiesByWorkerId",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Activity"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/activity/get/company/{id}": {
+      "get": {
+        "tags": [
+          "activity-controller"
+        ],
+        "operationId": "getActivitiesByCompany",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Activity"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/worker/delete/{id}": {
+      "delete": {
+        "tags": [
+          "worker-controller"
+        ],
+        "operationId": "deleteWorker",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/systemFixing/delete/{id}": {
+      "delete": {
+        "tags": [
+          "system-fixing-controller"
+        ],
+        "operationId": "deleteSystemFixing",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/supplier/delete/{id}": {
+      "delete": {
+        "tags": [
+          "supplier-controller"
+        ],
+        "operationId": "deleteSupplier",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/solarPanel/delete/{id}": {
+      "delete": {
+        "tags": [
+          "solar-panel-controller"
+        ],
+        "operationId": "deleteSolarPanelById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/inverter/delete/{id}": {
+      "delete": {
+        "tags": [
+          "inverter-controller"
+        ],
+        "operationId": "deleteInverterById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devisRequest/delete": {
+      "delete": {
+        "tags": [
+          "devis-request-controller"
+        ],
+        "operationId": "deleteDevisRequests",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devisRequest/delete/{id}": {
+      "delete": {
+        "tags": [
+          "devis-request-controller"
+        ],
+        "operationId": "deleteDevisRequestById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devis/delete": {
+      "delete": {
+        "tags": [
+          "devis-controller"
+        ],
+        "operationId": "supprimer_tout",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/devis/delete/{id}": {
+      "delete": {
+        "tags": [
+          "devis-controller"
+        ],
+        "operationId": "deleteDevis",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/delete": {
+      "delete": {
+        "tags": [
+          "customer-controller"
+        ],
+        "operationId": "supprimer_tout_1",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customer/delete/{id}": {
+      "delete": {
+        "tags": [
+          "customer-controller"
+        ],
+        "operationId": "deleteCustomer",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contactorRequest/delete/{id}": {
+      "delete": {
+        "tags": [
+          "contactor-request-controller"
+        ],
+        "operationId": "deleteContactorRequest",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contactor/delete/{id}": {
+      "delete": {
+        "tags": [
+          "contactor-controller"
+        ],
+        "operationId": "deleteContactor",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/constructor/delete/{id}": {
+      "delete": {
+        "tags": [
+          "construction-controller"
+        ],
+        "operationId": "deleteConstruction",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cable/delete/{id}": {
+      "delete": {
+        "tags": [
+          "cable-controller"
+        ],
+        "operationId": "deleteCable",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/battery/delete/{id}": {
+      "delete": {
+        "tags": [
+          "battery-controller"
+        ],
+        "operationId": "deleteBattery",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/activity/delete": {
+      "delete": {
+        "tags": [
+          "activity-controller"
+        ],
+        "operationId": "deleteActivities",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/activity/delete/{id}": {
+      "delete": {
+        "tags": [
+          "activity-controller"
+        ],
+        "operationId": "deleteActivity",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Activity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "text": {
+            "type": "string"
+          },
+          "construction": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "vehicule": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "spots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Spot"
+            }
+          },
+          "workers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Worker"
+            }
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Person": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "address": {
+            "type": "string"
+          }
+        }
+      },
+      "Spot": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Worker": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "profession": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "generaleInfo": {
+            "$ref": "#/components/schemas/Person"
+          },
+          "activities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "SystemFixing": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "model": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "materiel": {
+            "type": "string"
+          },
+          "charge": {
+            "type": "number",
+            "format": "float"
+          },
+          "height": {
+            "type": "number",
+            "format": "float"
+          },
+          "width": {
+            "type": "number",
+            "format": "float"
+          },
+          "installation_method": {
+            "type": "string"
+          },
+          "adaptability": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "image": {
+            "type": "string"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Supplier": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "SolarPanel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "model": {
+            "type": "string"
+          },
+          "nominal_power": {
+            "type": "number",
+            "format": "float"
+          },
+          "maximum_voltage": {
+            "type": "number",
+            "format": "float"
+          },
+          "maximum_current": {
+            "type": "number",
+            "format": "float"
+          },
+          "height": {
+            "type": "number",
+            "format": "float"
+          },
+          "width": {
+            "type": "number",
+            "format": "float"
+          },
+          "weight": {
+            "type": "number",
+            "format": "float"
+          },
+          "type_cell": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "image": {
+            "type": "string"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Meter": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "model": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "connexion_type": {
+            "type": "string"
+          },
+          "capacity": {
+            "type": "number",
+            "format": "float"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "image": {
+            "type": "string"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Inverter": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "model": {
+            "type": "string"
+          },
+          "nominal_power": {
+            "type": "number",
+            "format": "float"
+          },
+          "tension": {
+            "type": "number",
+            "format": "float"
+          },
+          "frequency": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "phase_number": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maximum_circuit_voltage": {
+            "type": "number",
+            "format": "float"
+          },
+          "minimal_circuit_current": {
+            "type": "number",
+            "format": "float"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "image": {
+            "type": "string"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "DevisRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "location": {
+            "type": "string"
+          },
+          "post_code": {
+            "type": "string"
+          },
+          "building_type": {
+            "type": "string"
+          },
+          "available_area": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roof_type": {
+            "type": "string"
+          },
+          "electricity_access": {
+            "type": "boolean"
+          },
+          "consumption": {
+            "type": "number",
+            "format": "float"
+          },
+          "status": {
+            "type": "string"
+          },
+          "devis": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "potential_customer": {
+            "$ref": "#/components/schemas/PotentialCustomer"
+          }
+        }
+      },
+      "PotentialCustomer": {
+        "type": "object",
+        "properties": {
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          }
+        }
+      },
+      "Devis": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "etat": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "solarPanel": {
+            "$ref": "#/components/schemas/MaterielSolarPanel"
+          },
+          "inverter": {
+            "$ref": "#/components/schemas/MaterielInverter"
+          },
+          "systemFixing": {
+            "$ref": "#/components/schemas/MaterielSystemFixing"
+          },
+          "cable": {
+            "$ref": "#/components/schemas/MaterielCable"
+          },
+          "battery": {
+            "$ref": "#/components/schemas/MaterielBattery"
+          },
+          "meter": {
+            "$ref": "#/components/schemas/MaterielMeter"
+          },
+          "devisRequest": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "construction": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "total": {
+            "type": "number",
+            "format": "float"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "MaterielBattery": {
+        "type": "object",
+        "properties": {
+          "modelBattery": {
+            "type": "string"
+          },
+          "quantityBattery": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "priceBattery": {
+            "type": "number",
+            "format": "float"
+          },
+          "tvaBattery": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalBattery": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      },
+      "MaterielCable": {
+        "type": "object",
+        "properties": {
+          "modelCable": {
+            "type": "string"
+          },
+          "quantityCable": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "priceCable": {
+            "type": "number",
+            "format": "float"
+          },
+          "tvaCable": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalCable": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      },
+      "MaterielInverter": {
+        "type": "object",
+        "properties": {
+          "modelInverter": {
+            "type": "string"
+          },
+          "quantityInverter": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "priceInverter": {
+            "type": "number",
+            "format": "float"
+          },
+          "tvaInverter": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalInverter": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      },
+      "MaterielMeter": {
+        "type": "object",
+        "properties": {
+          "modelMeter": {
+            "type": "string"
+          },
+          "quantityMeter": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "priceMeter": {
+            "type": "number",
+            "format": "float"
+          },
+          "tvaMeter": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalMeter": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      },
+      "MaterielSolarPanel": {
+        "type": "object",
+        "properties": {
+          "modelSolarPanel": {
+            "type": "string"
+          },
+          "quantitySolarPanel": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "priceSolarPanel": {
+            "type": "number",
+            "format": "float"
+          },
+          "tvaSolarPanel": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalSolarPanel": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      },
+      "MaterielSystemFixing": {
+        "type": "object",
+        "properties": {
+          "modelSystemFixing": {
+            "type": "string"
+          },
+          "quantitySystemFixing": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "priceSystemFixing": {
+            "type": "number",
+            "format": "float"
+          },
+          "tvaSystemFixing": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalSystemFixing": {
+            "type": "number",
+            "format": "float"
+          }
+        }
+      },
+      "Amendment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          },
+          "status": {
+            "type": "string"
+          },
+          "construction": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Battery": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "model": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "storage_capacity": {
+            "type": "number",
+            "format": "float"
+          },
+          "nominal_voltage": {
+            "type": "number",
+            "format": "float"
+          },
+          "maximum_load_voltage": {
+            "type": "number",
+            "format": "float"
+          },
+          "maximum_discharge_voltage": {
+            "type": "number",
+            "format": "float"
+          },
+          "life_cycle": {
+            "type": "string"
+          },
+          "operating_temperature": {
+            "type": "number",
+            "format": "float"
+          },
+          "lifespan": {
+            "type": "string"
+          },
+          "date_manufacture": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "image": {
+            "type": "string"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Bill": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "total": {
+            "type": "number",
+            "format": "double"
+          },
+          "construction": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Cable": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "model": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "length": {
+            "type": "number",
+            "format": "float"
+          },
+          "diameter": {
+            "type": "number",
+            "format": "float"
+          },
+          "nominal_voltage": {
+            "type": "number",
+            "format": "float"
+          },
+          "section_transversal": {
+            "type": "string"
+          },
+          "material": {
+            "type": "string"
+          },
+          "isolation": {
+            "type": "string"
+          },
+          "resistance": {
+            "type": "number",
+            "format": "float"
+          },
+          "price": {
+            "type": "number",
+            "format": "float"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "image": {
+            "type": "string"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Company": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "contact": {
+            "type": "string"
+          },
+          "contactor": {
+            "$ref": "#/components/schemas/Contactor"
+          },
+          "workers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Worker"
+            }
+          },
+          "devisList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Devis"
+            }
+          },
+          "devisRequestList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DevisRequest"
+            }
+          },
+          "meterList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Meter"
+            }
+          },
+          "systemFixingList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SystemFixing"
+            }
+          },
+          "inverterList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Inverter"
+            }
+          },
+          "supplierList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Supplier"
+            }
+          },
+          "batteryList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Battery"
+            }
+          },
+          "cableList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Cable"
+            }
+          },
+          "customerList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Customer"
+            }
+          },
+          "activityList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "constructionList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Construction"
+            }
+          },
+          "solarePanelList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SolarPanel"
+            }
+          }
+        }
+      },
+      "Construction": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "description": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "billList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Bill"
+            }
+          },
+          "activities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Activity"
+            }
+          },
+          "amendment": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Amendment"
+            }
+          },
+          "devisList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Devis"
+            }
+          },
+          "customer": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "company": {
+            "$ref": "#/components/schemas/Company"
+          }
+        }
+      },
+      "Contactor": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "person": {
+            "$ref": "#/components/schemas/Person"
+          },
+          "email": {
+            "type": "string"
+          },
+          "company": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "Customer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "generaleInfo": {
+            "$ref": "#/components/schemas/Person"
+          },
+          "constructions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Construction"
+            }
+          },
+          "company": {
+            "$ref": "#/components/schemas/Company"
+          }
+        }
+      },
+      "ContactorRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "companyName": {
+            "type": "string"
+          },
+          "companyAddress": {
+            "type": "string"
+          }
+        }
+      },
+      "RegistrationRequest": {
+        "required": [
+          "email",
+          "nom",
+          "password",
+          "prenom"
+        ],
+        "type": "object",
+        "properties": {
+          "nom": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 2147483647,
+            "minLength": 8,
+            "type": "string"
+          }
+        }
+      },
+      "AuthenticationRequest": {
+        "required": [
+          "email",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 2147483647,
+            "minLength": 8,
+            "type": "string"
+          }
+        }
+      },
+      "AuthenticationResponse": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string"
+          }
+        }
+      },
+      "Vehicule": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "marque": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "ref": {
+            "type": "string"
+          },
+          "available": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

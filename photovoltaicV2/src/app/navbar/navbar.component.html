@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-xxl" aria-label="Seventh navbar example">
+  <div class="container-fluid">
+    <img src="assets/lg.png" id="logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl" aria-controls="navbarsExampleXxl" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleXxl">
+      <ul class="navbar-nav ms-5 me-auto mb-2 mb-xl-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home" *ngIf="ent">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contactorRequest" *ngIf="admin">demande application</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contactor" *ngIf="admin">entrepreneur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="devis" *ngIf="ges">devis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="devisRequest" *ngIf="sec">demande devis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="gestionnaire/devisRequest" *ngIf="ges">demande devis</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="sec">Stock</a>
+          <ul class="dropdown-menu">
+            <li class="d-flex mb-2"><img src="assets/panneauS.png" width="30px" alt=""><a class="dropdown-item" routerLink="solarPanel">Panneaux Solaire</a></li>
+            <li class="d-flex mb-2"><img src="assets/Onduleur.png" width="30px" alt=""><a class="dropdown-item" routerLink="inverter">Onduleur</a></li>
+            <li class="d-flex mb-2"><img src="assets/sytemF.png" width="30px" alt=""><a class="dropdown-item" routerLink="systemFixing">Systeme de support</a></li>
+            <li class="d-flex mb-2"><img src="assets/cables.png" width="30px" alt=""><a class="dropdown-item" routerLink="cable">Cables</a></li>
+            <li class="d-flex mb-2"><img src="assets/battery.png" width="30px" alt=""><a class="dropdown-item" routerLink="battery">Batterie</a></li>
+            <li class="d-flex mb-2"><img src="assets/compteur.png" width="30px" alt=""><a class="dropdown-item" routerLink="meter">Compteurs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="supplier" *ngIf="sec||ent">fournisseur</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="worker" *ngIf="ent">ouvrier</a>
+        </li>
+      </ul>
+      <div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
